@@ -14,6 +14,4 @@ async def Hello(ctx):
     author = ctx.message.author
     await ctx.send(f"Hello {author.mention}")
 
-token - os.environ.get("BOT_TOKEN")
-
-Bot.run(str(token))
+Bot.run("NjkxMjI4MjgyMTI5MjE5NTk0.Xnn9MA.UmHdUpYZP0y5x3RFzU7EwdDfIUs")
