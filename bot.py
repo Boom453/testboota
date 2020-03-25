@@ -5,10 +5,12 @@ import os
 
 Bot = commands.Bot(command_prefix= "&")
 
-@Bot.event
+@@Bot.event
 async def on_ready():
      print('я родился!')
-
+     game = discord.Game("💥 &help 💥   by Boom453#1281")
+     await Bot.change_presence(status=discord.Status.idle, activity=game)
+    
 @Bot.command()
 async def Hello(ctx):
     author = ctx.message.author
