@@ -17,7 +17,7 @@ async def Hello(ctx):
 @Bot.event
 async def on_ready():
 while True:
-game = discord.Game("💥 &help 💥   by Boom453#1281")
+game = discord.Game("💥 &help 💥   by Boom453#1281"")
 await bot.change_presence(status=discord.Status.idle, activity=game)
      
 token = os.environ.get('BOT_TOKEN')
