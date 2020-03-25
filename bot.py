@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 import os
 
-Bot = commands.Bot(command_prefix= "!")
+Bot = commands.Bot(command_prefix= "&")
 
 @Bot.event
 async def on_ready():
