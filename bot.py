@@ -13,7 +13,8 @@ async def on_ready():
 async def Hello(ctx):
     author = ctx.message.author
     await ctx.send(f"Hello {author.mention}")
-     
+game = discord.Game("💥 &help 💥   by Boom453#1281")
+await client.change_presence(status=discord.Status.idle, activity=game)
 
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
