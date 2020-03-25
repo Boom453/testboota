@@ -16,6 +16,9 @@ async def on_ready():
 async def Hello(ctx):
     author = ctx.message.author
     await ctx.send(f"Hello {author.mention}")
+   
+ async defping():
+     await Bot.say("Pong")
      
 
 token = os.environ.get('BOT_TOKEN')
